@@ -207,7 +207,6 @@ void x21s_hash(const char* input, char* output, uint32_t len)
         sph_sha256 (&ctx_sha, (const void*) hash, 64);
         sph_sha256_close(&ctx_sha, (void*) hash);
 
-        memcpy(output, hash, 32);
 
 	memcpy(output, hash, 32);
 }

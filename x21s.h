@@ -1,8 +1,8 @@
 // Copyright (c) 2019 The RPG Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
-#ifndef X16R_H
-#define X16R_H
+#ifndef X21S_H
+#define X21S_H
 
 #ifdef __cplusplus
 extern "C" {
