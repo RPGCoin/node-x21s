@@ -1,9 +1,8 @@
 // Copyright (c) 2019 The RPG Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
-#include <stdio.h>
-#include <stdlib.h>
 #include <stdint.h>
+#include <stdlib.h>
 #include <string.h>
 
 #include "sha3/extra.h"
@@ -23,12 +22,11 @@
 #include "sha3/sph_shabal.h"
 #include "sha3/sph_whirlpool.h"
 #include "sha3/sph_sha2.h"
-
 #include "sha3/sph_haval.h"
 #include "sha3/sph_tiger.h"
 #include "sha3/lyra2.h"
 #include "sha3/gost_streebog.h"
-
+ 
 enum Algo {
 	BLAKE = 0,
 	BMW,
