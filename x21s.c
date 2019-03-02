@@ -72,27 +72,28 @@ void x21s_hash(const char* input, char* output, uint32_t len)
 	uint32_t hash[64/4];
 	char hashOrder[HASH_FUNC_COUNT + 1] = { 0 };
 
-	sph_blake512_context     ctx_blake;
-	sph_bmw512_context       ctx_bmw;
-	sph_groestl512_context   ctx_groestl;
-	sph_skein512_context     ctx_skein;
-	sph_jh512_context        ctx_jh;
-	sph_keccak512_context    ctx_keccak;
-	sph_luffa512_context     ctx_luffa;
-	sph_cubehash512_context  ctx_cubehash;
-	sph_shavite512_context   ctx_shavite;
-	sph_simd512_context      ctx_simd;
-	sph_echo512_context      ctx_echo;
-	sph_hamsi512_context     ctx_hamsi;
-	sph_fugue512_context     ctx_fugue;
-	sph_shabal512_context    ctx_shabal;
-	sph_whirlpool_context    ctx_whirlpool;
-	sph_sha512_context       ctx_sha512;
-    sph_haval256_5_context   ctx_haval;
-    sph_tiger_context        ctx_tiger;
-    sph_gost512_context      ctx_gost;
-    sph_sha256_context       ctx_sha;
+    sph_blake512_context 	ctx_blake;
+    sph_bmw512_context 		ctx_bmw;
+    sph_groestl512_context 	ctx_groestl;
+    sph_jh512_context 		ctx_jh;
+    sph_keccak512_context 	ctx_keccak;
+    sph_skein512_context 	ctx_skein;
+    sph_luffa512_context 	ctx_luffa;
+    sph_cubehash512_context ctx_cubehash;
+    sph_shavite512_context 	ctx_shavite;
+    sph_simd512_context 	ctx_simd;
+    sph_echo512_context 	ctx_echo;
+    sph_hamsi512_context 	ctx_hamsi;
+    sph_fugue512_context 	ctx_fugue;
+    sph_shabal512_context 	ctx_shabal;
+    sph_whirlpool_context 	ctx_whirlpool;
+    sph_sha512_context 		ctx_sha512;
+    sph_haval256_5_context 	ctx_haval;
+    sph_tiger_context		ctx_tiger;
+    sph_gost512_context 	ctx_gost;
+    sph_sha256_context 		ctx_sha;
 
+  
 	void *in = (void*) input;
 	int size = len;
     int i;
